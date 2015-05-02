@@ -136,6 +136,12 @@ header p {
 }
 
 .time-uxsofia,
+.event-uxsofia
+.time-uxdotgov,
+.event-uxdotgov
+.time-uxsofia,
+.event-uxsofia
+.time-uxsofia,
 .event-uxsofia {
   margin-top: 30px;
 }
@@ -150,6 +156,7 @@ header p {
   padding: 30px;
   border-radius: 10px;
   position: relative;
+  max-width: 1000px;
 }
 
 .event-block::before {
@@ -178,6 +185,10 @@ header p {
 .event-info {
   display: inline-block;
   vertical-align: top;
+}
+
+.event-info {
+  max-width: 800px;
 }
 
 .event-info .tags {
@@ -224,6 +235,7 @@ header p {
 
 .event-go-info:hover {
   background-color: #30bcec;
+  text-decoration: underline;
 }
 
 
