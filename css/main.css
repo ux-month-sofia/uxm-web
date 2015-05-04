@@ -92,19 +92,20 @@ header {
 header h1,
 header p {
   color: #fff;
-  width: 50%;
   margin: 0 auto;
   position: relative;
 }
 
 header h1 {
-  font-size: 22px;
+  font-size: 26px;
   top: 320px;
+  width: 50%;
 }
 
 header p {
-  font-size: 18px;
+  font-size: 22px;
   top: 380px;
+  width: 55%;
 }
 
 .timeline {
@@ -300,11 +301,11 @@ header p {
   bottom: 0px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .event-go-info:hover {
-  background-color: #30bcec;
+  background-color: #46889f;
 }
 
 .event-go-info::after {
