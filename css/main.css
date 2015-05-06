@@ -238,33 +238,30 @@ header p {
 }
 
 .event-info .tags {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   color: #6bcaea;
 }
 
 .tags span {
-  margin: 0 5px;
+  margin: 0 10px 0 0px;
 }
 
-.tags span::after {
-  margin-left: 5px;
+.tags span::before {
+  margin-right: 5px;
 }
 
-.tags-conf::after {
+.tags-conf::before {
   content: ' \25CF';
   display: inline-block;
   font-size: 20px;
 }
 
-.tags-meetup::after {
+.tags-meetup::before {
   content: ' \25A0';
   display: inline-block;
   font-size: 20px;
 }
 
-.tags-workshop::after {
+.tags-workshop::before {
   content: ' \25B2';
   display: inline-block;
 }
