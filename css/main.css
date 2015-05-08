@@ -127,8 +127,20 @@ header p {
 .timeslot {
   display: inline-block;
   text-align: right;
-  margin-right: 110px;
   position: relative;
+  margin-right: 140px;
+}
+
+.timeslot::after {
+  position: absolute;
+  content: '';
+  width: 270px;
+  height: 248px;
+  background: #6bcaea;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  top: -30px;
+  left: -30px;
 }
 
 .time-uxdotgov,
@@ -137,31 +149,32 @@ header p {
   left: 15px;
 }
 
+.time-uxdotgov::after,
+.time-idf::after {
+  top: -80px;
+  left: -45px;
+  height: 230px;
+}
+
 .time-uxify {
   left: 20px;
+}
+
+.time-uxify::after {
+  left: -50px;
+  height: 233px;
 }
 
 .timeslot > div {
   margin: 10px 0;
   font-size: 0.85em;
-  color: #454545;
+  color: #fff;
+  position: relative;
+  z-index: 100;
 }
 
 .timeslot.time-uxify > div {
   margin: 25px 0;
-}
-
-.timeline::before {
-  content: '';
-  height: 100%;
-  width: 1px;
-  border-right: 2px dashed #6bcaea;
-  opacity: 0.8;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  right: 25px;
-  z-index: 0;
 }
 
 .timeslot span {
@@ -178,8 +191,8 @@ header p {
 .timeslot .time-marker {
   width: 50px;
   height: 50px;
-  color: #fff;
-  background-color: #6bcaea;
+  color: #6bcaea;
+  background-color: #fff;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -188,7 +201,7 @@ header p {
 }
 
 .timeslot .time-marker.time-workshop {
-  background-image: url('../img/blue-tri.png');
+  background-image: url('../img/white-tri.png');
   background-color: transparent;
   background-repeat: no-repeat;
   border-radius: 0;
@@ -199,7 +212,7 @@ header p {
 .time-meetup::after {
   position: absolute;
   left: 60px;
-  color: #6bcaea;
+  color: #fff;
   font-size: 14px;
 }
 
@@ -274,7 +287,7 @@ header p {
 }
 
 .event-info {
-  max-width: 60%;
+  max-width: 55%;
 }
 
 .event-info .tags {
