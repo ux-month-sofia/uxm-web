@@ -115,20 +115,12 @@ header p {
   width: 60%;
 }
 
-.timeline {
-  width: 150px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: right;
-  position: relative;
-  text-shadow: 1px 2px 0 rgba(0,0,0,0.1);
-}
-
 .timeslot {
   display: inline-block;
   text-align: right;
   margin-right: 110px;
   position: relative;
+  z-index: 100;
 }
 
 .time-uxdotgov,
@@ -138,7 +130,7 @@ header p {
 }
 
 .time-uxify {
-  left: 20px;
+  left: 18px;
 }
 
 .timeslot > div {
@@ -149,19 +141,6 @@ header p {
 
 .timeslot.time-uxify > div {
   margin: 25px 0;
-}
-
-.timeline::before {
-  content: '';
-  height: 100%;
-  width: 1px;
-  border-right: 2px dashed #6bcaea;
-  opacity: 0.8;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  right: 25px;
-  z-index: 0;
 }
 
 .timeslot span {
