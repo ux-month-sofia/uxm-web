@@ -121,6 +121,34 @@ header p {
   vertical-align: top;
   text-align: right;
   position: relative;
+  text-shadow: 1px 2px 0 rgba(0,0,0,0.1);
+}
+
+.timeslot {
+  display: inline-block;
+  text-align: right;
+  margin-right: 110px;
+  position: relative;
+}
+
+.time-uxdotgov,
+.time-idf {
+  top: 50px;
+  left: 15px;
+}
+
+.time-uxify {
+  left: 20px;
+}
+
+.timeslot > div {
+  margin: 10px 0;
+  font-size: 0.85em;
+  color: #454545;
+}
+
+.timeslot.time-uxify > div {
+  margin: 25px 0;
 }
 
 .timeline::before {
@@ -136,7 +164,7 @@ header p {
   z-index: 0;
 }
 
-.timeline span {
+.timeslot span {
   font-size: 14px;
   color: #636363;
   display: inline-block;
@@ -147,7 +175,7 @@ header p {
   z-index: 1;
 }
 
-.timeline span.time-marker {
+.timeslot .time-marker {
   width: 50px;
   height: 50px;
   color: #fff;
@@ -159,65 +187,69 @@ header p {
   margin-top: 0px;
 }
 
-.timeline span.time-marker.time-workshop {
+.timeslot .time-marker.time-workshop {
   background-image: url('../img/blue-tri.png');
   background-color: transparent;
   background-repeat: no-repeat;
   border-radius: 0;
 }
 
-.timeline span.time-marker.time-meetup {
+.time-workshop::after,
+.time-conf::after,
+.time-meetup::after {
+  position: absolute;
+  left: 60px;
+  color: #6bcaea;
+  font-size: 14px;
+}
+
+.time-workshop::after {
+  content: 'Workshop';
+}
+
+.time-conf::after {
+  content: 'Conference Day';
+  line-height: 1.2;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.time-meetup::after {
+  content: 'Meetup';
+}
+
+.timeslot .time-marker.time-meetup {
   border-radius: 0;
-  transform: scale(0.85);
+  width: 48px;
+  height: 48px;
 }
 
-.timeline span.time-marker.time-conf {
-  transform: scale(0.90);
-}
-
-.time-uxsofia {
-  margin-top: 75px;
-}
-
-.time-uxdotgov {
-  margin-top: 166px;
-}
-
-.time-idf {
-  margin-top: 230px;
-}
-
-.time-uxify {
-  margin-top: 190px;
+.timeslot .time-marker.time-conf {
+  width: 48px;
+  height: 48px;
 }
 
 .event-blocks {
   display: inline-block;
-  margin-left: 20px;
+  position: relative;
+}
+
+.event-blocks::before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  border-right: 6px dashed #6bcaea;
+  position: absolute;
+  left: 130px;
 }
 
 .event-block {
   background-color: #fff;
   padding: 30px;
-  margin-top: 60px;
+  margin-top: 100px;
   border-radius: 10px;
   position: relative;
-  max-width: 1000px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.05);
-}
-
-.event-block::before {
-  content: '';
-  position: absolute;
-  box-sizing: border-box;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid transparent;
-  border-right: 10px solid #fff;
-  top: 50%;
-  margin-top: -10px;
-  left: -20px;
-
 }
 
 .event-logo {
@@ -230,7 +262,8 @@ header p {
 }
 
 .event-logo img {
-  margin-top: 50%;
+  position: relative;
+  top: 50%;
   transform: translateY(-50%);
 }
 
@@ -241,7 +274,7 @@ header p {
 }
 
 .event-info {
-  max-width: 760px;
+  max-width: 60%;
 }
 
 .event-info .tags {
@@ -276,7 +309,7 @@ header p {
 .event-info h1 {
   margin: 0;
   font-size: 28px;
-  color: #515151;
+  color: #454545;
 }
 
 .event-logistics {
@@ -290,7 +323,8 @@ header p {
 }
 
 .event-desc {
-  width: 80%;
+  width: 75%;
+  margin-bottom: 0px;
 }
 
 .event-go-info {
