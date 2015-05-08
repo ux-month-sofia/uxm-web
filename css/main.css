@@ -115,6 +115,14 @@ header p {
   width: 60%;
 }
 
+.lang-swap {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  text-decoration: underline;
+}
+
 .timeslot {
   display: inline-block;
   text-align: right;
