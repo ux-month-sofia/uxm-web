@@ -83,7 +83,7 @@ html {
 
 header {
   background-image: url('../img/header-bg.jpg');
-  background-position: 50% 15%;
+  background-position: 50% 0%;
   width: 100%;
   height: 380px;
   text-align: center;
@@ -562,6 +562,13 @@ footer a {
 }
 
 @media (max-width: 785px) {
+
+  .lang-swap {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
   .main-wrap {
     width: 100%;
   }
