@@ -202,6 +202,22 @@ header p {
   content: 'Meetup';
 }
 
+html[lang="bg"] .time-workshop::after {
+  content: 'Тренинг';
+}
+
+html[lang="bg"] .time-conf::after {
+  content: 'Конферентен ден';
+}
+
+html[lang="bg"] .time-conf.time-seminar::after {
+  content: 'Семинар';
+}
+
+html[lang="bg"] .time-meetup::after {
+  content: 'Среща';
+}
+
 .event-blocks {
   display: inline-block;
   position: relative;
