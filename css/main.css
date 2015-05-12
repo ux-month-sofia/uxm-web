@@ -157,7 +157,7 @@ header p {
   display: inline-block;
   vertical-align: middle;
   margin-top: 10px;
-  line-height: 50px;
+  line-height: 46px;
   position: relative;
   z-index: 1;
 }
@@ -165,20 +165,12 @@ header p {
 .timeslot .time-marker {
   width: 50px;
   height: 50px;
-  color: #fff;
-  background-color: #6bcaea;
-  font-size: 16px;
+  color: #6bcaea;
+  font-size: 34px;
   font-weight: bold;
   text-align: center;
   border-radius: 50%;
   margin-top: 0px;
-}
-
-.timeslot .time-marker.time-workshop {
-  background-image: url('../img/blue-tri.png');
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border-radius: 0;
 }
 
 .time-workshop::after,
@@ -186,7 +178,7 @@ header p {
 .time-meetup::after {
   position: absolute;
   left: 60px;
-  color: #6bcaea;
+  color: #454545;
   font-size: 14px;
 }
 
@@ -201,19 +193,13 @@ header p {
   padding-top: 10px;
 }
 
+.time-conf.time-seminar::after {
+  content: "Seminar";
+  line-height: 2;
+}
+
 .time-meetup::after {
   content: 'Meetup';
-}
-
-.timeslot .time-marker.time-meetup {
-  border-radius: 0;
-  width: 48px;
-  height: 48px;
-}
-
-.timeslot .time-marker.time-conf {
-  width: 48px;
-  height: 48px;
 }
 
 .event-blocks {
@@ -227,7 +213,7 @@ header p {
   height: 100%;
   border-right: 6px dashed #6bcaea;
   position: absolute;
-  left: 130px;
+  left: 120px;
 }
 
 .event-block {
@@ -302,11 +288,12 @@ header p {
 .event-logistics {
   margin: 0;
   font-size: 20px;
-  color: #6bcaea;
+  color: #333;
 }
 
 .event-logistics span {
   font-weight: bold;
+  color: #333;
 }
 
 .event-desc {
