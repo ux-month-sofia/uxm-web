@@ -362,6 +362,14 @@ footer a {
    Helper classes
    ========================================================================== */
 
+.grayscale {
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+
 /*
  * Hide visually and from screen readers:
  */
